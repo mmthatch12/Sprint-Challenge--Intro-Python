@@ -35,10 +35,9 @@ print(b)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with any letter between 'C' and 'G' inclusive.
+import string
 print("Starts between C and G, inclusive:")
-c_g = [chr(y) for y in range(ord('c'), ord('g') + 1)]
-cap = [z.capitalize() for z in c_g]
-c = [x for x in humans if x.name[0] == [z for z in cap]]
+c = [x for x in humans if x.name[0].string.ascii_uppercase() >= 67 and x.name[0].string.ascii_uppercase() <= 71]
 # I'm not sure how to do this one?
 print(c)
 
