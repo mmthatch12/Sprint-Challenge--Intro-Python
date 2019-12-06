@@ -37,7 +37,7 @@ print(b)
 # whose name starts with any letter between 'C' and 'G' inclusive.
 import string
 print("Starts between C and G, inclusive:")
-c = [x for x in humans if x.name[0].string.ascii_uppercase() >= 67 and x.name[0].string.ascii_uppercase() <= 71]
+c = [x for x in humans if ord(x.name[0]) >= 67 and ord(x.name[0]) <= 71]
 # I'm not sure how to do this one?
 print(c)
 
